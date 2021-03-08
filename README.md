@@ -1,5 +1,7 @@
 React App 
 =========
+## Visit Site [WEBSITE](https://quirky-mccarthy-1d540d.netlify.app/).
+Please have some patience because images are taking time to load
 
 ## Technologies Used:
 - React Functional Component
