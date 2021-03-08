@@ -18,7 +18,7 @@ function Yellow() {
   }, []);
 
   const handleLinkHoverEvents = () => {
-    yellowSection.current.querySelectorAll("img").forEach(el => {
+    yellowSection.current.querySelectorAll("div").forEach(el => {
       el.addEventListener("mouseover", () => setLinkHovered(true));
       el.addEventListener("mouseout", () => setLinkHovered(false));
     });
@@ -142,7 +142,7 @@ const Wrapper = styled.section`
   }
   .cursor--link-hovered {
     transform: translate(-50%, -50%) scale(1.25);
-    background-color: tranparent !important;
+    background-color: #fefefe;
   }
   .img-bckgrnd{
     background-image: url('${image4}');
@@ -157,7 +157,7 @@ const Wrapper = styled.section`
     padding-top: 100px;
     width: 100%;
     height: 600px;
-    background-color: rgb(244, 181, 87);
+    background-color: ${(props) => props.theme.yellow};
     
   }
   .front-box{
@@ -165,7 +165,7 @@ const Wrapper = styled.section`
     width:700px;
   }
   #front-box-double-img {
-    background-color: rgb(26, 25, 25);
+    background-color: r${(props) => props.theme.yellow};
     background-image: url('${image4}');
     background-size: 67%;
     background-position: 25% 25% !important;
